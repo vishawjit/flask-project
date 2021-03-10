@@ -1,0 +1,492 @@
+{% extends "layout.html" %}
+{% block body %}
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/home-bg.jpg') }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>{{params['blog_name']}}</h1>
+              <span class="subheading">{{params['tag_line']}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+
+     
+{% for post in posts %} 
+ 
+     
+          <div class="post-preview">
+            <a href="/post/{{post.slug}}">
+              <h2 class="post-title">
+                {{ post.title }}
+              </h2>
+              <h3 class="post-subtitle">
+                {{post.tagline}}
+              </h3>
+            </a>
+            <p class="post-meta">Posted by
+              <a href="#">admin</a>
+              on {{post.date}}</p>
+          </div>
+          {{post.content[0:43]}}...
+          <hr>
+</li></a>
+          {% endfor %}
+
+
+
+          <!-- Pager -->
+          <div class="clearfix">
+           {% if number!=0 %}
+           <a class="btn btn-primary float-left" href="{{prev}}">Previous</a>
+            
+            {% endif %}
+            <a class="btn btn-primary float-right" href="{{next}}">Next</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+
+
+ooter -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright © Your Website 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
+
+  </body>
+
+</html>
+
+
+</script>
+
+  </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </a>
+            <p class="post-meta">Posted by
+              <a href="#">Start Bootstrap</a>
+              on September 24, 2018</p>
+          </div>
+          <hr>
+          <div class="post-preview">
+            <a href="/post">
+              <h2 class="post-title">
+                I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+              </h2>
+            </a>
+            <p class="post-meta">Posted by
+              <a href="#">Start Bootstrap</a>
+              on September 18, 2018</p>
+          </div>
+          <hr>
+          <div class="post-preview">
+            <a href="/post">
+              <h2 class="post-title">
+                Science has not yet mastered prophecy
+              </h2>
+              <h3 class="post-subtitle">
+                We predict too much for the next year and yet far too little for the next ten.
+              </h3>
+            </a>
+            <p class="post-meta">Posted by
+              <a href="#">Start Bootstrap</a>
+              on August 24, 2018</p>
+          </div>
+          <hr>
+          <div class="post-preview">
+            <a href="/post">
+              <h2 class="post-title">
+                Failure is not an option
+              </h2>
+              <h3 class="post-subtitle">
+                Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+              </h3>
+            </a>
+            <p class="post-meta">Posted by
+              <a href="#">Start Bootstrap</a>
+              on July 8, 2018</p>
+          </div>
+          <hr>
+          <!-- Pager -->
+          <div class="clearfix">
+            <a class="btn btn-primary float-right" href="#">Older Posts →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright © Your Website 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
+
+  </body>
+
+</html>
+
+
+</script>
+
+  </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

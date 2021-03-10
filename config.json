@@ -1,0 +1,23 @@
+{
+  "params":
+  {
+    "local_server":"True",
+    "local_uri": "mysql://root:@localhost/notesforprogrammers",
+    "prod_uri":"mysql://root:@localhost/notesforprogrammers",
+    "fb_url":"https://facebook.com/Vishwajit pawar",
+    "tw_url":"https://twitter.com/Vishwajit pawar",
+    "gh_url": "https://github.com/codingthunder",
+    "blog_name": "Notes for programmers",
+    "tag_line": "Heaven for programmers",
+    "gmail-user":"user-gmail.com",
+    "gmail-password":"password",
+    "about_text": "Hi my name is harry and I create programming tutorials and I am a good boy",
+    "no_of_posts": 3,
+    "login_image":"bootstrap-logo.svg",
+    "admin_user": "vishawjit",
+    "admin_password": "pawar",
+    "upload_location": "//storage//emulated//0//VidMate//Web//static"
+    
+  }
+}
+
